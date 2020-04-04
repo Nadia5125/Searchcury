@@ -9,20 +9,26 @@ By Nadia
 
 # Features 
 
-MERN
+Full MERN
 
 
 
 # Technology used 
 
-•	MERN
 •	React 
+
 •	Bootstrap 
+
 •	Mangodb 
+
 •	Nodejs 
+
 •	express
+
 •	Jsx & css 
-•	Npm install 
-•	Heroku 
+
+•	npm install 
+
+•	Deployed to Heroku 
 
 
