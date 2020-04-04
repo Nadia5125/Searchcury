@@ -5,7 +5,7 @@
 Searchury is a Search app for movies. The user will be able to search for any movies that they are interested in and in different types of genres. 
 
 
-
+# Creator 
 By Nadia
 
 
