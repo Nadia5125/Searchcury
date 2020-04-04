@@ -21,7 +21,7 @@ Full MERN
 
 •	Bootstrap 
 
-•	Mangodb 
+•	Mangodb AWS
 
 •	Nodejs 
 
