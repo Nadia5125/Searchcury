@@ -35,6 +35,7 @@ Full MERN
 
 
 # UI / UX
+Note This might change as I move along going forward with the project.
 Click here >> https://balsamiq.cloud/shn95f4/p3veyho/rA24C
 
 
