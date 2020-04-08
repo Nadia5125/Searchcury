@@ -1,0 +1,101 @@
+
+
+* {
+  width: 0 auto;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(playing.gif);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  font-size: large;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+
+
+
+.paragraph {
+  position: relative;
+  top: 120px;
+} 
+
+.App-link {
+  position: relative;
+  color: #61dafb;
+  top: 150px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/*Testing for the buttons*/
+#navbarAdmin a {
+  position: relative;
+  color: #fff;  
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  float: left;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  width:  200px;
+  text-align: center;
+  transition: transform .2s;    
+  bottom: 180px;
+  margin: 30px;  
+}
+
+
+
+
+/* Add a background color on mouse-over */
+
+.navbar a:hover {
+  transform: scale(1.1)
+}
+
+#admin-title {
+  margin-top: 100px;
+  color: #fff;
+}
+
+
+
