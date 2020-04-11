@@ -33,5 +33,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "4/4/2020",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadia5125/Searchcury.git"
+  },
+  "author": "Nadia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nadia5125/Searchcury/issues"
+  },
+  "homepage": "https://github.com/Nadia5125/Searchcury#readme"
 }
