@@ -37,8 +37,7 @@ Full MERN
 # UI / UX
 Note This might change as I move along going forward with the project.
 
-Click here >> https://balsamiq.cloud/shn95f4/p3veyho/rA24C
-
+Click here >> https://app.moqups.com/ohc2bDGoy5/view/page/ad64222d5?ui=0
 
 # Data Flow 
 Note This might change as I move along going forward with the project. 
