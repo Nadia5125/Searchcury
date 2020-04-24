@@ -6,10 +6,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.4.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.1.1",
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-responsive": "^8.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
@@ -17,7 +20,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\" \"npm run seed\"  \"npm run seed2\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedUserDB.js",
+    "seed2": "node scripts/seedMovie.js",
+    "install": "cd client && npm install",    
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,17 +44,15 @@
       "last 1 safari version"
     ]
   },
-  "description": "4/4/2020",
-  "main": "index.js",
+  "description": "search movie",
+  "main": "server.js",
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nadia5125/Searchcury.git"
-  },
   "author": "Nadia",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nadia5125/Searchcury/issues"
-  },
-  "homepage": "https://github.com/Nadia5125/Searchcury#readme"
+  "keywords": [
+    "search",
+    "movie"
+  ]
 }
+
+

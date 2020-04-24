@@ -1,43 +1,66 @@
 import React from 'react';
+import {Route, Link, } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './Component/Home';
+import About from './Component/About';
+import Signup from './Component/Signup';
+import Login from './Component/Login';
+// import SearchBox from './movie/SearchBox';
+import Nav from './Navbar/Nav';
+import MovieApp from './movie/MovieApp';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <div class="grid">          
-            <nav class="navbar" id="navbarAdmin">              
-              <a href="#">HOME</a>         
-              <a href="#">SIGN UP</a>            
-              <a href="#">LOGIN</a>
-              <a href="https://www.youtube.com/watch?v=XfRY0ASZHuU">YOUR ACCOUNT</a>
 
-            </nav>        
-        </div> 
-        <div className="paragraph">       
-        <p>
-          <p>
-          <code><h1  style={{color: 'white'}}>Searchcury</h1></code>
-          <br></br>
-          <p>You can search a movie that interest you by clicking the link below. </p>
-          <p>If you don’t have an account, please go to the sign up section and create an account.</p>
-          <p>Then you can log into your new account.</p>
-        </p>
-        </p>  
-        </div>
-        <a
-          className="App-link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {/* Learn React */}
-          Search for mivies
-        </a>
-      </header>
+    <div className="app">
+      {/* <MovieApp /> */}
+      <Nav /> 
+      
+      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/signup" component={Signup} />      
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/movieApp"  component={MovieApp} />
+
     </div>
-  );
-}
+    
+    
+
+  )
+
+};
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import {BrowserRouter, Router} from 'react-router-dom';
+// // import './App.css';
+// // import Home from './Home';
+
+// const App = () => {
+
+//   return (
+    
+//     <BrowserRouter>
+//       <Router path="/" exact component={Home} />
+//         <Router path="/home" exact component={Home} />
+
+//         <h1>HELLO THIS IS TESTING</h1>
+//     </BrowserRouter>
+
+//   );
+// };
+
+// export default App;
