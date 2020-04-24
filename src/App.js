@@ -5,6 +5,7 @@ import Home from './Component/Home';
 import About from './Component/About';
 import Signup from './Component/Signup';
 import Login from './Component/Login';
+import Logout from './Component/Logout';
 // import SearchBox from './movie/SearchBox';
 import Nav from './Navbar/Nav';
 import MovieApp from './movie/MovieApp';
@@ -22,6 +23,7 @@ const App = () => {
       <Route exact path="/about" component={About} />
       <Route exact path="/signup" component={Signup} />      
       <Route exact path="/login" component={Login} />
+      <Route exact path="/logout" component={Logout} />
       <Route exact path="/movieApp"  component={MovieApp} />
 
     </div>
