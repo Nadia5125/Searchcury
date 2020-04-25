@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // This is similar to a Sequelize model
 
 const userSchema = new Schema({
-	userName: {
+	name: {
 		type: String,
         required: true        
 	},

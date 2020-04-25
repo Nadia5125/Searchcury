@@ -1,38 +1,20 @@
-// const axios = require('axios');
-// const router = require('express').Router();
-// const db = require('../../models');
-// const mongoose = require('mongoose');
+//requiring in my controllers file for User
+const router = require('express').Router();
+const userController = require('../../controllers/userController');
 
+module.exports = router;
 
-// module.exports = router;
+// /api/user/
+router.route('/').get(userController.findAll);
 
-// // Get Route - show all Users
-// router.route('/').get((req, res) => {
-//     db.User
-//         .find({})
-//         .then((users) => {
-//             console.log("$$$$$$$$$$$$$$$$$$$$$$$")
-//             console.log(users);
-//             res.json(users);
-//         })
-//         .catch((err) => {
-//             res.json(err);
-//         });
-// });
+// /api/user/:data route to create user
+router.route('/').post(userController.createUser);
 
-// // Post route - create new user
-// router.route('/').post((req,res) => {
-//     db.User
-//     .create(req.body)
-//     .then(user => res.json(user))
-//     .catch(err => res.json(err))
-// });
+// /api/user/add route to add user quantity
+router.route('/add/').put(userController.addUser);
 
-// // Delete route - delete user
-// router.route('/delete/').post((req,res) => {
-//     console.log(req.body);	
-//     let id = mongoose.Types.ObjectId(req.body.userID);
-//     db.Users.deleteOne({_id: id})
-//     .then((user) => {res.json(user)})
-//     .catch((err) => {res.json(err)})
-// })
+// /api/user/minus route to decrease user quantity
+router.route('/minus/').put(userController.minusUser);
+
+// /api/user/delete route to delete user
+router.route('/delete/').post(userController.deleteUser);

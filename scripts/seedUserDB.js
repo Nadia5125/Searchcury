@@ -2,37 +2,35 @@ const mongoose = require('mongoose');
 const db = require('../models');
 mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/searchcury', {
-	useNewUrlParser: true,
-	useUnifiedTopology: true
-});
+// This file empties the Sweets collection and inserts the Sweets below
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/searchury');
 
-const userSeed = [
+const itemSeed = [
 	{
-		username: 'nm',
-		password: 'nm55',
-		firstName: 'nmaaa',
-		
+		name: 'Ben',
+		email: 'ben@gmail.com',
+		password: '1234',
 	},
 	{
-		username: 'ella',
-		password: 'ella22',
-		firstName: 'Ella',
-		
+		name: 'James',
+		email: 'james@gmail.com',
+		password: '1234',
 	},
 	{
-		username: 'lilly',
-		password: 'lilly33',
-		firstName: 'Lilly',
-		
-	},
-		
-	
+		name: 'Samantha',
+		email: 'samantha@gmail.com',
+		password: '1234',
+    },
+    {
+		name: 'Leila',
+		email: 'leil@gmail.com',
+		password: '1235',
+	}
 ];
 
 db.User
 	.deleteMany({})
-	.then(() => db.User.collection.insertMany(userSeed))
+	.then(() => db.User.collection.insertMany(itemSeed))
 	.then((data) => {
 		console.log(data.insertedIds.length + ' records inserted!');
 		process.exit(0);
@@ -41,4 +39,3 @@ db.User
 		console.error(err);
 		process.exit(1);
 	});
-
