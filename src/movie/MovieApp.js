@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-// import '../App.css';
-// import Navbar from '../Navbar/Nav';
 import SearchBox from './SearchBox';
 import MovieList from './MovieList';
 import Pagination from './Pagination';
-import MovieInfo from './MovieInfo';;
-// import './MovieApp.css';
+import MovieInfo from './MovieInfo';
+
 
 class MovieApp extends Component {
   constructor(){
@@ -73,7 +71,7 @@ class MovieApp extends Component {
     let numberPages = Math.floor(this.state.totalResults / 20);
     return (
         <div>
-          {/* <Navbar /> */}
+          
           
           {this.state.currentMovie == null ? <div><SearchBox handleSubmit={this.handleSubmit} handleChange={this.handleSearch}/><MovieList viewMovieInfo={this.viewMovieInfo} movies={this.state.movies}/></div> : <MovieInfo closeMovieInfo={this.closeMovieInfo} currentMovie={this.state.currentMovie} />}
             {this.state.totalResults > 20 && this.state.currentMovie == null ? <Pagination pages={numberPages} nextPage={this.nextPage} currentPage={this.state.currentPage}/> : ''}

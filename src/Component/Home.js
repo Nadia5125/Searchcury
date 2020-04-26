@@ -6,14 +6,9 @@ const Home = () => {
 
     return (
 
-        // <nav className="homenav" >
-        //     <h1>SEARCHCURY</h1>
-        // </nav>,
-
         <div className="container text-center">
             <div className="body-holder">
-
-                {/* <h1>WELCOME HOME PAGE hope it working</h1> */}
+                                
                 <h1>Searchcury</h1>
                 <br></br><br></br>
                 
@@ -24,8 +19,8 @@ const Home = () => {
 
                 <a
                 className="App-link"
-                href="./login">                
-                <button className="btn" style={{width: '30%', height:'39px', color: 'white', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}}>Search</button>
+                href="./movieApp">                
+                <button className="btn" style={{width: '30%', height:'39px', color: 'white', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}}>Search For Movie</button>
                 </a>   
             </div>               
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+// import {Nav} from 'react-bootstrap';
 import './Nav.css';
 
 
-const Nav = () => {
+const Nav  = () => {
 
     return (
         <header className="navbar">        
@@ -18,7 +19,7 @@ const Nav = () => {
                         <li><Link to="/signup">Signup</Link></li>
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/logout">Logout</Link></li>
-                        <li><Link to="./movieApp">movieApp</Link></li>
+                        {/* <li><Link to="./movieApp">movieApp</Link></li> */}
                     </ul>
                 </div>
             </nav>
