@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Button} from 'react-bootstrap';
 // import MovieApp from '../movie/MovieApp'
 
 const Login = (props) => {
@@ -17,7 +18,7 @@ const Login = (props) => {
                     <br></br><br></br>
                     <input style={{width: '100%', height: '40px', padding: '10px'}} type="text" placeholder="Password"></input>
                     <br></br><br></br>                 
-                    <button className="btn" style={{color: 'white', width: '100%', height: '40px', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}} variant="primry" type="submit">Login</button>
+                    <Button className="btn" style={{color: 'white', width: '100%', height: '40px', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}} variant="primry" type="submit">Login</Button>
                 </form>
                 
             </div>         

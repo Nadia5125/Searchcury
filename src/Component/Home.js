@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 import './Home.css';
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
                 <a
                 className="App-link"
                 href="./movieApp">                
-                <button className="btn" style={{width: '30%', height:'39px', color: 'white', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}}>Search For Movie</button>
+                <Button className="btn" style={{width: '30%', height:'39px', color: 'white', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}}>Search For Movie</Button>
                 </a>   
             </div>               
 

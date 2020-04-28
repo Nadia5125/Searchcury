@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Button} from 'react-bootstrap';
 // import MovieApp from '../movie/MovieApp'
 
 const Logout = (props) => {
@@ -13,7 +14,7 @@ const Logout = (props) => {
             <div style={{width: '50%'}} className="card">
                 
                 <form style={{margin: '50px'}}>                                
-                    <button className="btn" style={{color: 'white', width: '100%', height: '40px', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}} variant="primry" type="submit">Logout</button>
+                    <Button className="btn" style={{color: 'white', width: '100%', height: '40px', backgroundColor: 'rgba(89, 8, 109, 0.688)', borderColor: 'rgba(89, 8, 109, 0.688)'}} variant="primry" type="submit">Logout</Button>
                 </form>
                 
             </div>         
