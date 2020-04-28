@@ -1,10 +1,11 @@
 import React from 'react';
 import './Home.css';
 
+
 const Home = () => {
 
     return (
-      
+
         <div className="container text-center">
             <div className="body-holder">
                                 
@@ -23,10 +24,7 @@ const Home = () => {
                 </a>   
             </div>               
 
-        </div>     
-          
-        
-        
+        </div>
 
 
     );

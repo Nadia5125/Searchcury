@@ -1,0 +1,77 @@
+
+@import url('https://fonts.google.com/specimen/Raleway?selection.family=Raleway:400,400i,700');
+
+* {
+    width: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    margin-top: 100px;
+   
+}
+
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    /* background: rgba(137, 43, 226, 0.63); */
+    background: rgb(57, 5, 70);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(153, 24, 67), #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(3, 53, 87), rgba(89, 8, 109, 0.986)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    /* text-align: center; */
+    top: 0;
+    
+  
+}
+
+.nav-navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem;
+    
+}
+
+.logo  {    
+    /* color: rgb(48, 120, 236); */
+    text-decoration: none;
+    font-size: 2rem;    
+    color: white;
+    width: 50px;
+}
+/* 
+.space {
+    flex: 1;
+} */
+
+.nav-navigation-list {
+    text-decoration: none;
+}
+
+
+
+.nav-navigation-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+   
+}
+
+.nav-navigation-list li {
+    
+    padding: 0 2.2rem;
+    /* right: 200px; */    
+    
+}
+
+
+.nav-navigation-list a:hover, 
+.nav-navigation-list a:active {
+    color: rgb(235, 114, 66);
+}

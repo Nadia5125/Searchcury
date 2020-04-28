@@ -4,7 +4,6 @@ import MovieList from './MovieList';
 import Pagination from './Pagination';
 import MovieInfo from './MovieInfo';
 
-
 class MovieApp extends Component {
   constructor(){
     super()
